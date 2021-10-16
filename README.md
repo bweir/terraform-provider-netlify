@@ -1,5 +1,8 @@
 # Terraform Netlify Provider
 
+I like using Netlify, but the Terraform provider is no longer maintained. I
+figured I'd take a shot at extending it.
+
 ## Requirements
 
 - [Terraform](https://www.terraform.io/downloads.html) 0.10.x
