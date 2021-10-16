@@ -1,9 +1,21 @@
+# editors
+.vscode/
+.*.swp
+*~
+
+# outputs
 *.dll
 *.exe
+
+# macOS
 .DS_Store
-example.tf
-terraform.tfplan
-terraform.tfstate
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
 bin/
 modules-dev/
 /pkg/
@@ -11,14 +23,13 @@ website/.vagrant
 website/.bundle
 website/build
 website/node_modules
+
+# vagrant
 .vagrant/
+
 *.backup
-./*.tfstate
-.terraform/
 *.log
 *.bak
-*~
-.*.swp
 .idea
 *.iml
 *.test
