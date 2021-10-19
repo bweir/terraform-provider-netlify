@@ -1,5 +1,7 @@
 # Terraform Netlify Provider
 
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 I like using Netlify, but the Terraform provider is no longer maintained. I
 figured I'd take a shot at extending it.
 
@@ -10,17 +12,17 @@ figured I'd take a shot at extending it.
 
 ## Building The Provider
 
-Clone repository to: `$GOPATH/src/github.com/terraform-providers/terraform-provider-netlify`
+Clone repository to: `$GOPATH/src/github.com/bweir/terraform-provider-netlify`
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/terraform-providers; cd $GOPATH/src/github.com/terraform-providers
-$ git clone git@github.com:terraform-providers/terraform-provider-netlify.git
+$ mkdir -p $GOPATH/src/github.com/bweir; cd $GOPATH/src/github.com/bweir
+$ git clone git@github.com:bweir/terraform-provider-netlify.git
 ```
 
 Enter the provider directory and build the provider
 
 ```sh
-$ cd $GOPATH/src/github.com/terraform-providers/terraform-provider-netlify
+$ cd $GOPATH/src/github.com/bweir/terraform-provider-netlify
 $ make build
 # or if you're on a mac:
 $ gnumake build
@@ -108,4 +110,14 @@ _Note:_ Acceptance tests create real resources, and often cost money to run.
 
 ```sh
 $ make testacc
+```
+
+## Building the Documentation
+
+The documentation is generated with
+[tfplugindocs](https://github.com/hashicorp/terraform-plugin-docs). Run in the
+project root:
+
+```
+tfplugindocs
 ```

@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/bweir/terraform-provider-netlify/netlify"
 	"github.com/hashicorp/terraform/plugin"
-	"github.com/terraform-providers/terraform-provider-netlify/netlify"
 )
 
 func main() {

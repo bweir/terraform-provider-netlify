@@ -1,4 +1,4 @@
-module github.com/terraform-providers/terraform-provider-netlify
+module github.com/bweir/terraform-provider-netlify
 
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.5.0 // indirect
